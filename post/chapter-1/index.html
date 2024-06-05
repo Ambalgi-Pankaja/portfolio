@@ -205,14 +205,15 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><figure><img src="https://github.com/Ambalgi-Pankaja/portfolio/tree/main/images/blog_e2e.jpg">
-</figure>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l">
+      <img src="https://github.com/Ambalgi-Pankaja/portfolio/tree/main/images/blog_e2e.jpg">
+
 
 <p>My first Hello World project in the world of GenAI involves crafting a 100-word blog post. I opted for the AWS Bedrock service, tapping into the Llama2 LLM model for this task. Among the array of LLM options offered by AWS Bedrock, Llama stood out for its cost-free accessibility. Built on the Transformer architecture, Llama models excel in processing input sequences of varying lengths and producing outputs of flexible sizes.</p>
 <p>For our specific needs, we&rsquo;ve selected the &ldquo;Llama 2 chat 13 B&rdquo; model. Leveraging AWS services, we&rsquo;ve constructed an end-to-end solution primed for deployment in a production environment. API Gateway triggers a Lambda function housing our core logic, which interfaces with Llama APIs.</p>
 <p>Employing a serverless architecture, we&rsquo;ve crafted a Lambda function. API Gateway facilitates POST requests to this function, triggering the generation process. The resultant blog content is been uploaded to AWS S3 bucket.</p>
-<figure><img src="https://github.com/Ambalgi-Pankaja/portfolio/tree/main/images/blog_gen_code.jpg">
-</figure>
+<img src="https://github.com/Ambalgi-Pankaja/portfolio/tree/main/images/blog_gen_code.jpg">
+
 
 <p>The code snippet above illustrates the creation of a boto3 client to access the &ldquo;bedrock-runtime&rdquo; AWS services. Subsequently, the model is invoked with the specified parameters, as outlined in the Llama2 API documentation.</p>
 <p>The response is archived in the S3 bucket as a PDF document. For a comprehensive overview, refer to the complete code provided in the link below.</p>
@@ -225,7 +226,7 @@
       
       
       </div>
-    </div>
+</div>
 
     <aside class="w-30-l mt6-l">
 
