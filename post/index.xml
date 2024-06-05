@@ -13,21 +13,21 @@
       <link>https://ambalgi-pankaja.github.io/portfolio/post/chapter-2/</link>
       <pubDate>Sat, 01 Jun 2024 11:00:59 -0400</pubDate>
       <guid>https://ambalgi-pankaja.github.io/portfolio/post/chapter-2/</guid>
-      <description>Developed an end-to-end Generative AI application to answer questions from the personal pdf documents that has been provided as an input to the LLM models. I utilized the AWS Bedrock service to fine tune the LLM models.</description>
+      <description>The provided code showcases a comprehensive pipeline for interacting with PDF documents through a Streamlit application. Let&amp;rsquo;s break down the functionality into coherent paragraphs:&#xA;Data Ingestion and Text Chunk Splitting:&#xA;The process begins with data ingestion, where PDF documents are loaded using the PyPDFDirectoryLoader. These documents are then split into smaller text chunks using the RecursiveCharacterTextSplitter. This splitting mechanism ensures that the large documents are broken down into manageable pieces for further processing.</description>
     </item>
     <item>
       <title>GenAI 1: Blog Generation using AWS Bedrock</title>
       <link>https://ambalgi-pankaja.github.io/portfolio/post/chapter-1/</link>
       <pubDate>Sat, 01 Jun 2024 10:58:08 -0400</pubDate>
       <guid>https://ambalgi-pankaja.github.io/portfolio/post/chapter-1/</guid>
-      <description>I developed a simple end-to-end Generative AI project to create a 100-word blog. I utilized the AWS Bedrock service, specifically leveraging the Llama2 LLM model for blog generation. A Lambda function was created to take advantage of serverless architecture, and an API Gateway was used to trigger POST requests to this function. The generated blog content is then saved in an AWS S3 bucket.&#xA;Link to Git hub repository</description>
+      <description>My first Hello World project in the world of GenAI involves crafting a 100-word blog post. I opted for the AWS Bedrock service, tapping into the Llama2 LLM model for this task. Among the array of LLM options offered by AWS Bedrock, Llama stood out for its cost-free accessibility. Built on the Transformer architecture, Llama models excel in processing input sequences of varying lengths and producing outputs of flexible sizes.</description>
     </item>
     <item>
       <title>DS 1: House Prices - Advanced Regression Techniques</title>
       <link>https://ambalgi-pankaja.github.io/portfolio/post/chapter-3/</link>
       <pubDate>Wed, 01 May 2024 11:00:59 -0400</pubDate>
       <guid>https://ambalgi-pankaja.github.io/portfolio/post/chapter-3/</guid>
-      <description>Developed a Jupyter Notebook to predict the housing prices using advanced regression technique. Handled the missing data, preprocessing. Modeling. Hypermater tuning.&#xA;Link to Git hub repository</description>
+      <description>Developed a Jupyter Notebook to predict the housing prices using advanced regression technique.&#xA;Please find more details in the Notebook.&#xA;Link to Git hub repository</description>
     </item>
   </channel>
 </rss>

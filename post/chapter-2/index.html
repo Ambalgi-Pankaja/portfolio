@@ -48,7 +48,7 @@
   <meta itemprop="description" content="Advanced RAG application using AWS Bedrock and Langchain">
   <meta itemprop="datePublished" content="2024-06-01T11:00:59-04:00">
   <meta itemprop="dateModified" content="2024-06-01T11:00:59-04:00">
-  <meta itemprop="wordCount" content="37">
+  <meta itemprop="wordCount" content="435">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="GenAI 2: Q and A GenAI application">
   <meta name="twitter:description" content="Advanced RAG application using AWS Bedrock and Langchain">
@@ -81,6 +81,18 @@
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/portfolio/about/" title="About page">
               About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/portfolio/blog/" title="Blogs page">
+              Blogs
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/portfolio/certificates/" title="Certificates page">
+              Certificates
             </a>
           </li>
           
@@ -193,11 +205,26 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><figure><img src="https://ambalgi-pankaja.github.io/portfolio/images/qAndAscreenshot.jpg">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><figure><img src="/images/qAndAscreenshot.jpg">
 </figure>
 
-<p>Developed an end-to-end Generative AI application to answer questions from the personal pdf documents that has been provided as an input to the LLM models.
-I utilized the AWS Bedrock service to fine tune the LLM models.</p>
+<figure><img src="/images/qanda_1.jpg">
+</figure>
+
+<figure><img src="/images/qanda_2.jpg">
+</figure>
+
+<p>The provided code showcases a comprehensive pipeline for interacting with PDF documents through a Streamlit application. Let&rsquo;s break down the functionality into coherent paragraphs:</p>
+<p><strong>Data Ingestion and Text Chunk Splitting:</strong></p>
+<p>The process begins with data ingestion, where PDF documents are loaded using the <code>PyPDFDirectoryLoader</code>. These documents are then split into smaller text chunks using the <code>RecursiveCharacterTextSplitter</code>. This splitting mechanism ensures that the large documents are broken down into manageable pieces for further processing. By dividing the documents into smaller chunks, the application sets the stage for efficient analysis and retrieval of information.</p>
+<p><strong>Embedding Generation and Vector Store Creation:</strong></p>
+<p>Once the documents are split, the next step involves generating embeddings for these text chunks. Leveraging the Titan embedding model accessed through the Bedrock service, the code uses the <code>BedrockEmbeddings</code> class to generate embeddings for each chunk. These embeddings capture semantic information about the text, enabling downstream tasks such as similarity search and question answering. The embeddings are then stored in a vector store using the <code>FAISS</code> library. This vector store acts as a repository for the embeddings, facilitating fast and accurate retrieval of relevant text chunks based on user queries.</p>
+<p><strong>Fine-tuning Language Models for Question Answering:</strong></p>
+<p>The application offers users the option to fine-tune Language Model (LLM) models for question answering tasks. It provides two models: Claude and Llama2, both accessed through the Bedrock service. The code initializes these models using the <code>Bedrock</code> class with specific model IDs and parameters. These models are capable of generating responses to user queries based on the provided context and question. By fine-tuning these models, the application enhances its ability to provide accurate and informative answers to user queries, thereby improving the user experience.</p>
+<p><strong>Streamlit Application and User Interaction:</strong></p>
+<p>The core functionality of the application is wrapped within a Streamlit interface, making it intuitive and accessible to users. Users can interact with the application by asking questions related to the PDF documents. They have the flexibility to choose between the Claude and Llama2 models for generating responses to their queries. Additionally, the application provides a convenient option to update the vector store, ensuring that it remains up-to-date with any changes or additions to the document collection.</p>
+<p><strong>Conclusion:</strong></p>
+<p>In summary, the provided code presents a robust pipeline for processing PDF documents and enabling interactive question answering through a Streamlit application. By leveraging text chunk splitting, embedding generation, and fine-tuning of Language Models, the application offers a powerful tool for exploring and extracting insights from large document collections. With further refinement and customization, this pipeline holds the potential to address a wide range of information retrieval and analysis tasks across various domains.</p>
 <ul class="pa0">
   
 </ul>

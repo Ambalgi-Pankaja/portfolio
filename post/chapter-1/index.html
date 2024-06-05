@@ -48,7 +48,7 @@
   <meta itemprop="description" content="Blog generation">
   <meta itemprop="datePublished" content="2024-06-01T10:58:08-04:00">
   <meta itemprop="dateModified" content="2024-06-01T10:58:08-04:00">
-  <meta itemprop="wordCount" content="69">
+  <meta itemprop="wordCount" content="209">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="GenAI 1: Blog Generation using AWS Bedrock">
   <meta name="twitter:description" content="Blog generation">
@@ -81,6 +81,18 @@
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/portfolio/about/" title="About page">
               About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/portfolio/blog/" title="Blogs page">
+              Blogs
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/portfolio/certificates/" title="Certificates page">
+              Certificates
             </a>
           </li>
           
@@ -193,10 +205,18 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><figure><img src="https://ambalgi-pankaja.github.io/portfolio/images/apigateway_to_lambda_to_s3.jpg">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><figure><img src="static/images/blog_e2e.jpg">
 </figure>
 
-<p>I developed a simple end-to-end Generative AI project to create a 100-word blog. I utilized the AWS Bedrock service, specifically leveraging the Llama2 LLM model for blog generation. A Lambda function was created to take advantage of serverless architecture, and an API Gateway was used to trigger POST requests to this function. The generated blog content is then saved in an AWS S3 bucket.</p>
+<p>My first Hello World project in the world of GenAI involves crafting a 100-word blog post. I opted for the AWS Bedrock service, tapping into the Llama2 LLM model for this task. Among the array of LLM options offered by AWS Bedrock, Llama stood out for its cost-free accessibility. Built on the Transformer architecture, Llama models excel in processing input sequences of varying lengths and producing outputs of flexible sizes.</p>
+<p>For our specific needs, we&rsquo;ve selected the &ldquo;Llama 2 chat 13 B&rdquo; model. Leveraging AWS services, we&rsquo;ve constructed an end-to-end solution primed for deployment in a production environment. API Gateway triggers a Lambda function housing our core logic, which interfaces with Llama APIs.</p>
+<p>Employing a serverless architecture, we&rsquo;ve crafted a Lambda function. API Gateway facilitates POST requests to this function, triggering the generation process. The resultant blog content is been uploaded to AWS S3 bucket.</p>
+<figure><img src="static/images/blog_gen_code.jpg">
+</figure>
+
+<p>The code snippet above illustrates the creation of a boto3 client to access the &ldquo;bedrock-runtime&rdquo; AWS services. Subsequently, the model is invoked with the specified parameters, as outlined in the Llama2 API documentation.</p>
+<p>The response is archived in the S3 bucket as a PDF document. For a comprehensive overview, refer to the complete code provided in the link below.</p>
+<hr>
 <p><a href="https://github.com/Ambalgi-Pankaja/generative-ai/tree/main/aws-bedrock/blog-generation">Link to Git hub repository</a></p>
 <ul class="pa0">
   
